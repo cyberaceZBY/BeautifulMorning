@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RORPlaySound.h"
+#import "Source/RORMultiPlaySound.h"
+#import "BMUtil.h"
+#import <AVFoundation/AVFoundation.h>
+#import "MobClick.h"
 
-@interface BMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface BMAppDelegate : UIResponder <UIApplicationDelegate>{
+    UIBackgroundTaskIdentifier bgTask;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) int period;
 
 @end
